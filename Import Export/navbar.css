@@ -110,6 +110,9 @@ header>#container>div>img:hover{
     font-size: 18px;
     
 }
+
+
+/* section */
 #section{
     display:grid;
     grid-template-columns: 10% 70% 10%;
@@ -120,7 +123,7 @@ header>#container>div>img:hover{
     padding: 0px 35px;
     background-color: #9CF0E0;
 }
-#section>div{
+#men, #women{
     border: 3px solid black;
     font-family: 'Futura-pt', 'Futura STD', Arial, Verdana, sans-serif;
     font-weight: 700;
@@ -133,10 +136,8 @@ header>#container>div>img:hover{
     
 }
 
-.strong:hover  .dropdown1 {
-    
-    display: block;
-}
+.strong:hover .dropdown1 {display: block;}
+
 .dropdown1{
     display: none;
     margin-left: 20px;
@@ -149,12 +150,14 @@ header>#container>div>img:hover{
     color: white;
 }
 
-.strong{
-    display: inline-block;
+strong{
+    border: 1px solid;
+    display: grid;
     text-align: center;
     position: relative;
     cursor: default;
     border: none;
+    
 }
 
 /* .dropbtn {
@@ -188,6 +191,50 @@ header>#container>div>img:hover{
   
   .dropdown-content a:hover {background-color: #ddd;}
   
-  .dropdown:hover .dropdown-content {display: block;}
+  
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+  section{
+    position: relative;
+  }
+  section>div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Futura-PT', 'FuturaStd', Tahoma, Arial, Verdana, sans-serif;
+    
+  }
+  section>div>h1{
+    color: white;
+    letter-spacing: 1.5px;
+    font-family: 'Futura-PT', 'FuturaStd', Tahoma, Arial, Verdana, sans-serif;
+    font-size: 60px;
+  }
+  section>div>p{
+    line-height: 40px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Futura-PT', 'FuturaStd', Tahoma, Arial, Verdana, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+  }
+  #grid_item{
+    display: grid;
+    margin-top: 35px;
+    gap: 45px;
+    grid-template-columns: repeat(2, 160px);
+  }
+  #grid_item>div{
+    font-weight: 700;
+    height: 40px;
+    place-content: center;
+    display: grid;
+    background-color: white;
+  }
+  #grid_item>div:hover{
+    background-color: black;
+    color: white;
+  }
