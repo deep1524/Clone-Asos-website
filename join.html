@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>validation</title>
+    <style>
+          body{
+            background-color: rgb(216, 213, 213);
+        }
+       
+      img {
+        display: block;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 40px;
+      }
+      #main {
+        /* border: 1px solid red; */
+        width: 50%;
+        margin: auto;
+        padding: 40px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    
+      #join {
+        /* border: 1px solid red; */
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 35px;
+        margin: auto;
+      }
+      h1{
+        text-align: center;
+      }
+
+      #social {
+        width: 70%;
+        margin: auto;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-evenly;
+      margin-bottom: 20px;
+      }
+      #social>div {
+        width: 20%;
+        height: 30px;
+        padding: 10px 25px 10px 25px;
+        border: 1px solid gray;
+        display: flex;
+        
+      }
+      #social>div >div >img {
+        width: 30px;
+        height: 30px;
+         margin-left: -5px;
+        margin-top: -10px;
+      } 
+
+    #userinput{
+        /* border: 1px solid red; */
+        width: 70%;
+        margin: auto;
+    }
+ 
+      input {
+        width: 96%;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      #term {
+        display: flex;
+        /* border: 1px solid red; */
+        width: 70%;
+        margin: auto;
+       
+      }
+      #term > div {
+        margin-left: 100px;
+      }
+      #btn{
+        background-color: black;
+        color: white;
+      }
+      #btn:hover{
+        cursor: pointer;
+      }
+
+    
+    
+  
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://my.asos.com/Content/images/asos-logo-2022-93x28.png"
+      alt="Asus logo"
+    />
+
+    <div id="main">
+      <div id="join">
+            <div> <a href="join.html"> Join</a></div>
+            <div> <a href="signin.html">Signin</a></div>
+      </div>
+      <hr />
+      <h1>SIGN UP WITH...</h1>
+    
+<div id="social">
+     <div>
+              <div>
+                <img
+                src="data:image/png;base64,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"
+                  alt=""
+                />
+                </div>
+             <div>GOOGLE</div>
+    </div>
+    <div>
+        <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAdVBMVEX///8AAAC/v7/09PSioqLS0tIwMDD6+vrl5eV7e3vx8fF4eHjLy8tQUFBGRkarq6vY2NiOjo7e3t6EhIS3t7cXFxcMDAyampo+Pj5hYWHb29uwsLDs7OwgICCgoKBXV1dsbGwsLCyJiYm8vLxlZWU3NzckJCSrYnspAAAE5klEQVR4nO2d13KrQAyGg4MDbsENN1xTzvs/4okhTgyIErMrrTT67pmR/lkWrcry9KQoiqIoiqIoimKTPbUBTJj724Pn7ajNYMB04WX0qS1xnuTi3RhT2+I4vneHilVHz8sxpbbHYYaTvFZeSG2Ruyy9ItQWucuopFVMbZKzvJa08rbUNrnKS1krb01tlKNAWunHEKb4GdT9vZoFqNWA2iwneQe10pMhxBDW6oXaLicBgoYrS2q7XKQcuKesqO1yElgrr0dtl4usYa1eqe1ykoqFpfl3gCOslU9tl5PEoFYTarOcpA8vLGqz3GQAaqUZUhBQKz3ngISQVhphwUSqVXvKeXetFVZSTvrNqU1yl1VBqteA2iKHKWilcXsdOalOQ2pz3OZeKq3lNPAj1ZsG7Y0cPO8wWUT6CUwJ5j1/NjiPZlH/ue0zu2gwyYqum8nAH7d+jjXD5SCfgBkljVt4fw2UL0aJdMEisGizWdekQPtAQH8LwCI8y7GZV7vtvfjgOpnOqh/J1pfMnS08Nfh9ei88sV9fGh5JH5P3yQxqVtUv59/kQuiDPTQQ0tofKmqm0EI5ToNgvGitVIqopMTHn1x/gAW1h8YIi2kEC2yonTTE2L5UX8QiDtwJilZfCIhRoYS6HVbsc4QV/XtW+KR2tiMVtWVLnKnd7URFr6M1WJ8V/xZadmZG7W8X3lClilmfqaeoWp2p3e3GAVMr1ttVZfueHZgfpQNMrbhXzODRG9UKAnNhse9HakqeG4T/uCaeVidqVzuDeIBmn2yoGuqyAP85sWc0rQTkk/1mLw0hoON7i6WVgIWF9y1kH2JhJkipPTUA2pYlobhqvQJ9g3myIQVLKwlvIZpYEr6Fcyyx3qg9NUCv2U0z8D/qIJbsJezvaLks1sWvb1q1RJpAQpsRmljUjprgrGK1By3nQO2oCdDE4p9RRhRLwkU+aOdoCffoo23wEoJStNAhofbUAPDFOxaQkPtDO+5IuIgTrxBG7akB0FI0EnZ4vGbSEbWr3cEr3kt4D/HEKo4KM+SCJpaAkgVaCC+hMQQvdhBwgzDO8GoG+9YQ1Gkwamc7gzmJcqZ2titoeYcr3MMHvMnoK8wvWNmjisV98B5XrJh35QIt/ydBLcxIK4VzoQd12jCF87kHrRz2A+PhMLQraH555dtUgy+W5x2pnX6Upiv+rBAzrSTiVS3y8Dz8EInFM2WDOX5/B7XbjwH+5MQ6XCv6GwqxuDYwU2zxfG9nIxCL7/09qFf3ZFC73AF0rThPPiHesZLBOWWKnajh3VSDvLQ4ZwCxlxbvhYXa9cB7x0pB1IrzpzADMYyndtUA5b8VWoJp3i8HVnGa76nwnor/2JuGa7qhAMp11Px39wyMLGBM7aQxEBqQJEwefmO9LMa4Gl3C9qmHf8vyPZavauNbtwexGj8ImA3LYzGQ51r9qsHaD8MEjO+UsBZtse6QrMJS56SQY04RK7GpuM39hoWMPN+iaiPGG2skRe4lDP/jSbRWLQoY23XS6+92/V4yazxRSrhMspa6nPw2KRT+Qr/ujwWcO99bsr9UKAX3Nz5HFbnDE/vCVyuAc2J8rHF9B00v8mwdfYBh/qu4mjX+kamXH5z6FL9b3RMsv3fvw0fScrRynow+r+fLf9uI+TDmIwRhyLuRQ1EURVEURTHCf8eYSCcC+BLCAAAAAElFTkSuQmCC"
+             alt=""
+            />
+        </div>
+             <div>APPLE</div>
+    </div>
+    <div>
+        <div>
+             <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///9HWZM9UY81S4z09fgxSIqkq8Xd4OpAU5CHkbU7T46Zob5EVpG+w9ZBVJBjcKB/ibBOYJjn6fGwt85ebZ/w8fZreabU1+RUZJrFytt0gKrl5+/N0eBZaZ1dbJ9LXZe5vtOTm7yhqcUVgHx+AAAEAUlEQVR4nO2d6XarIBRGDQ4xBI1mTlozvf9DtmmzbtNGUC6DHNe3fyfgXijo4QBRBAAAAAAAAAAAAAAAAAAAAAAAAAAAADAn8Ytnu+WqavLUJ+ft9d2f5eGY81JM/FLmcX1devGbLnjp2e6BYHzuoR3n6UB+X7B659gv2fIB/T4RfOVWcJEPK/hJ7FQxAEG3ihUb2u4L7uxZLOKh3b4RtaMeNfE9BEphVzeG8zDu0TvcydCfnIf2+sFNI14GHgmfcfMkHod8l/lL/G5fMAlhKPxH7uA23QUyVHxTbu0bhvQY3rH/IGbhjBV30vEb2h8RAzOMpzCEIQytI14Yj6HIORfn/eIvucqRjqFgfD27TDctNS7XCkUqhmW6zt6kVb4pXhRpGIp4q4641PJGJGHI110RJdqGgmeddZI2FKJHSJCyYXlu6z1HZFju+wgSNhR1v28fuoa8ZxyJrCG/9ayTqqHY962TqmH/WCdRw/LYu06ihn27GbKGYt2/TpqGrPt1lLghl38PvqCYCwrXsP9QEUUHxURCuIYdc5vJZrl5sFzRjNPwQl5FUZ3qn18KZYXhGsbSxzBLedkRQqRhKCu/0pufDNZQ2tHcNCdgwzWUzN1udGeYgzUsq/bSV7ozzMEayjIMtBM9wjWct5euXRA5Q+00CGqGCQxhCEMYwhCGMIQhDGEIQxiqEYw/kUoMU/4KoxEvLfdZ8Ywkx+RSvHLbU4jqi6ZX0kU7yZ7AzIzGZGELiomLYAxzo5T6TTp2w6k8ijoSw/HfpSt5nSMxnMvXy43EUBEJH4nhicB4aGZIYR7fzFA+HAZkqJFb8gKJ1QjMZIOHdwp3KTO5kIKCITe5kJuiymAMjdpwplggH4yhURtuKXwBG7VhQ2HtmkkbJrWi4HAMDUaLJYlIlCwzoQ/KHJtgDCf5f29bVSiz+MIxnLDmeW3vWpIxdHpZBdyo6wvI8PcibSbJ+ronXuos5Q7K8BeyvDbtwmEIQxjCEIYwhCEMYQhDGOobks6ngSEMYQhDGMJQFzbC/NLfjDGDFoYwhCEMYQhDGDozdLCvviIjeQhDZt9QtWmTf0PRWBfU31/FqaEsZmeEKkPJu6GT8+WsHPdky9As91jC1MaDaMnQxTEzkTpV0LMhPzgx3FloRDuG4uREMIoq8yOf7Bg6eKF5XMfEuDu1YsgN0gE7MD/VyoZh7qab+cb4xcaCYb5wemLuITa7Uc0N2cnxkcC7iVF3Y2wYV87PPE6q2GBcNDRkQrE5qD12W/VmAK4MSz7xcWj1F9N5k3LGcn1i2Z4KHf9jPObHi8Hafn02h1U206e6tBtW6r9ds8vO39nxAAAAAAAAAAAAAAAAAAAAAAAAAAAAjJcPriR27CHd9lQAAAAASUVORK5CYII="
+            alt=""
+            />
+        </div>
+            <div>FACEBOOK</div>
+    </div>
+   
+</div
+
+
+
+
+   <p>
+    Signing up with social is super quick. No extra passwords to remember -
+    no brain fail. Don't worry, we'd never share any of your data or post
+    anything on your behalf #notevil
+   </p>
+
+
+
+    <div id="userinput">
+       
+        <h1>OR SIGN UP WITH EMAIL</h1>
+    <form action="" onsubmit="return myfun()" id="form">
+        NAME:
+        <br />
+        <input type="text"  id="name"  value=""/>
+       <br>
+         EMAIL ADDRESS:
+        <br />
+      
+        <input type="text"  id="email" value="" name="Email" />
+        <span id="emailvalidation" style="color:red ;"></span>
+        <p>We'll send your order confirmation here</p>
+        <br />
+        PASSWORD
+        <input type="password" id="password" value="" placeholder="Must be 5 or more characters"/>
+        <span  id="messages" style="color: red"></span>
+        <br />
+        USER NAME:
+        <input type="text" name="" id="username" value=""/>
+        <br />
+        MOBILE:
+        <input type="number" id="mobile" value="">
+        <span id="mobilevalidation" style="color: red;"></span>
+        <br>
+        DESCRIPTION:
+        <input type="text" id="description" value="">
+        <br>
+        DATE OF BIRTH:
+        <input type="date" name="" id="dob" value=""/>
+        <p>You need to be 16 or over to use ASOS</p>
+        MOSTLY INTERESTED IN:
+        <br>
+        <input type="radio" name="emptype" />Womenswear
+        <br>
+        <input type="radio" name="emptype" id="" />Menswear
+
+        <h4>CONTACT PREFERENCES</h4>
+        <p id="p">Tell us which emails you’d like:</p>
+         
+        <input type="checkbox" name="" id="" />Discount and sales
+         <br>
+        <input type="checkbox" name="" id="" />New stuff
+        <br>
+        <input type="checkbox" name="" id="" />your exclusive
+        <br>
+        <input type="checkbox" name="" id="" />ASOS Partners
+           <br>
+
+        <input type="submit" name="" id="btn" value="JOIN ASOS"> 
+    </form>
+</div> 
+
+      <div id="term">
+        <div>
+            <p > <a href="https://www.asos.com/privacy-policy/" target="_blank">Pravicy Policy</a></p>
+        </div>
+         <div>
+            <p> <a href="https://www.asos.com/terms-and-conditions/" target="_blank">Term condition</a></p>
+        </div>
+  
+    </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  async function myfun() {
+    event.preventDefault();
+// email validation
+let email=document.getElementById("email").value;
+if(email==""){
+    document.getElementById("emailvalidation").innerHTML="** Please fill Email id";
+return false;
+}
+
+if(email.indexOf("@")<=0){
+document.getElementById("emailvalidation").innerHTML="**Invalid @ position";
+return false;
+}
+if(email.charAt(email.length-4)!='.')  {
+    document.getElementById("emailvalidation").innerHTML="**Invalid . position";
+return false;
+}
+
+ 
+
+
+ 
+// password validation
+    let a = document.getElementById("password").value;
+    if (a == "") {
+      document.getElementById("messages").innerHTML = "** Please fill Password";
+      return false;
+    }
+    if (a.length < 5) {
+      document.getElementById("messages").innerHTML =
+        "**Password length must be greater than 5 characters";
+      return false;
+    }
+    if (a.length > 20) {
+      document.getElementById("messages").innerHTML =
+        "**Password length must be smaller than 20 characters";
+      return false;
+    }
+
+    // mobile validation
+
+    let mobile = document.getElementById("mobile").value;
+    if(mobile==""){
+        document.getElementById("mobilevalidation").innerHTML = "** Please fill Mobile Number";
+      return false;
+    }  if(mobile.length<10){
+        document.getElementById("mobilevalidation").innerHTML = "**Mobile Number must be 10 digit ";
+      return false;
+    }
+    if(mobile.length>  10){
+        document.getElementById("mobilevalidation").innerHTML = "**Mobile Number must be 10 digit ";
+      return false;
+    }
+     
+
+
+
+
+
+    let signup_data = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      password: document.getElementById("password").value,
+      username: document.getElementById("username").value,
+      mobile: document.getElementById("mobile").value,
+      description: document.getElementById("description").value,
+    };
+    signup_data = JSON.stringify(signup_data);
+
+    let signup_api_link =
+      "https://masai-api-mocker.herokuapp.com/auth/register";
+
+    let response = await fetch(signup_api_link, {
+      method: "POST",
+      body: signup_data,
+
+      headers: {
+        "Content-type": "application/json",
+      },
+    });
+    let data = await response.json();
+    alert("Resister Sucessfull");
+    console.log("data:", data);
+  }
+</script>
