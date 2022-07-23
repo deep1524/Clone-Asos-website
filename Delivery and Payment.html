@@ -56,7 +56,7 @@
                     <i class="fa-brands fa-cc-paypal rectangle"></i>
                     <i class="fa-brands fa-cc-amex rectangle"></i>
                 </div>
-                <div id="place">PLACE ORDER</div>
+                <div id="place" onclick="order()">PLACE ORDER</div>
                 <p>By placing your order you agree to our Terms & Conditions, privacy and returns policies . You also consent to some of your data being stored by ASOS, which may be used to make future shopping experiences better for you.</p>
             </div>
             </div>
@@ -85,3 +85,9 @@
       <div id="bottom">ASOS Help</div>
 </body>
 </html>
+<script>
+    function order(){
+        alert("your order is confirmed sucessfully")
+        window.location.href="index.html"
+    }
+</script>

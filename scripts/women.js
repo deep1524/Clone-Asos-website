@@ -27,3 +27,10 @@ nava2.innerHTML=navbar2();
 // product-sizeNoInventoryPresent 5: "XL,"
 // product-sizeNoInventoryPresent 6: "XXL"
 // product-strike: "Rs. 2459"
+
+// import {navbar} from "./Import Export/navbar.js";
+import {header,navbar, section, footer, last} from '../Import Export/navbar.js'
+let x=document.getElementById("navbar");
+x.innerHTML=navbar();
+document.getElementsByTagName("footer")[0].innerHTML=footer();
+document.getElementById("last").innerHTML=last();
