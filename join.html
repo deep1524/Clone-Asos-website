@@ -295,7 +295,7 @@ return false;
     let response = await fetch(signup_api_link, {
       method: "POST",
       body: signup_data,
-
+       mode:"cors",
       headers: {
         "Content-type": "application/json",
       },

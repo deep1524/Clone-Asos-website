@@ -53,7 +53,7 @@ function AddData(el){
     data.push(s);
     localStorage.setItem('CartData',JSON.stringify(data))
     container.innerHTML=null;
-    window.location.href='cart.html'
+    window.location.href='../gaurav/cart.html'
 }
 function CData(i,n,p){
     this.image=i;
