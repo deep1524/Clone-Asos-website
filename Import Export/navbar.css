@@ -63,6 +63,85 @@ header>#container>div:hover{
     
 }
 
+.dropdown2{
+  display: none;
+  border-radius: 15px;
+}
+
+#first ul{
+  display: flex;
+  list-style: none;  
+}
+#first ul li{
+  
+  width: 50px;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 21px;
+}
+
+#A:hover .dropdown2{
+  display: block;
+  position: absolute;
+  width: 300px;
+  margin-left: -50px;
+  margin-top: 10px;
+  background-color: white;
+  z-index: 10; 
+  
+  
+  
+}
+#first:hover .dropdown2 ul {
+  display: block;
+  
+  
+  
+}
+#first:hover .dropdown2 ul li {
+  margin: 0px;
+  
+  display: flex;
+  color: black;
+  width: auto;
+  
+  border-bottom: 1px dotted black;
+}
+#first:hover .dropdown2 ul li a{
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+#first:hover .dropdown2 ul li:last-child{
+  border-bottom: none;
+}
+#first:hover .dropdown2 ul li:first-child{
+  background-color: #f1dbe2;
+  justify-content: space-between;
+  
+  
+}
+#cancel{
+  cursor: pointer;
+}
+#first:hover .dropdown2 ul li:first-child div{
+  margin-left: 18px;
+  
+}
+
+#first:hover .dropdown2 ul li i{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+#first:hover .dropdown2 ul li:hover a{
+  color:blue;
+
+}
+#first:hover .dropdown2 ul li:hover {
+  color:blue;
+
+}
 #navbar>i{
     font-size: 22px;
     color: white;
@@ -142,7 +221,7 @@ header>#container>div:hover{
     
 }
 
-.strong:hover .dropdown1 {display: block;}
+
 
 .dropdown1{
     display: none;
